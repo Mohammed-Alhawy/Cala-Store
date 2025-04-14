@@ -186,13 +186,13 @@ header .container nav ul li a i{
   font-weight: 500;
 }
 
-.menu{
+.p-menu{
   display: none;
 }
 .clos{
   display: none;
 }
-.menu i{
+.p-menu i{
   font-size: 23px;
   font-weight: 500;
 }
@@ -231,17 +231,17 @@ header .container nav ul li a i{
   }
   
 
-  .menu{
+  .p-menu{
     display: block;
   }
 
-  .menu a{
+  .p-menu a{
     color:#1a1a1a ;
     font-size: 16px;
     margin-right: 15px;
   }
 
-  .menu a i{
+  .p-menu a i{
     font-weight: 300;
   }
 
@@ -1240,6 +1240,23 @@ footer .container .col .row img{
 
 /* start cart page */
 
+.big-cart{
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  right: -110%;
+  z-index: 100;
+  transition: all 0.6s;
+  overflow:auto;
+}
+
+.big-cart-Active{
+  right: 0;
+}
+
 #cart{
   overflow-x: auto;
 }
@@ -1385,9 +1402,3 @@ footer .container .col .row img{
 
 }
 
-
-@media(max-width:360px){
-  #cart-add .container{
-    background-color: #000;
-  }
-}
